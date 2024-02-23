@@ -1,6 +1,10 @@
 <template>
-  <div v-editable="blok" class="px-4">
-    <StoryblokComponent v-for="blok in blok.body" :key="blok._uid" :blok="blok" />
+  <div
+    v-editable="blok"
+    class="py-32 text-6xl text-[#50b0ae] font-bold text-center"
+  >
+    Test
+    {{ blok.title }}
   </div>
 </template>
 
