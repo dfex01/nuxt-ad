@@ -1,0 +1,612 @@
+.green-btn {
+    margin: 0.2rem;
+    color: #fff;
+    background: #148935;
+    background: linear-gradient(to bottom, #5dce50, #148935);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+.green-btn:hover {
+    background: linear-gradient(to top, #5dce50, #148935);
+}
+
+#overviewContent h1 {
+    font-size: 23px;
+    color: #666;
+    text-align: left;
+    font-weight: bold;
+    padding: 0.5em
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 100%;
+}
+
+#overviewContent .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#overviewContent h2 {
+    font-size: 16px;
+}
+
+#overviewContent h1, #overviewContent h2 {
+    color: black;
+    font-weight: bold;
+}
+
+#overviewContent h2>a, #overviewContent h4>a {
+    text-decoration: none;
+    color: #0d72c2;
+}
+
+#overviewContent .products {
+    margin-top: 30px;
+    padding: 30px 10px;
+    background-color: #f1f5f9;
+}
+
+#overviewContent .products-seperate {
+    margin-top: 30px;
+    padding: 30px 10px;
+    background-color: #f1f5f9;
+}
+
+#overviewContent .products .row {
+    justify-content: center;
+}
+
+#overviewContent .products > .row  > div {
+    display: flex;
+}
+
+#overviewContent .products > .row.product > div {
+    display: block;
+}
+
+#overviewContent .products .row  div.prod {
+    width: 100%;
+}
+
+#overviewContent .prod h2, #overviewContent h4 {
+    text-align: center;
+}
+
+a.text-underline:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.banner .img-fluid {
+    width: 100%;
+}
+
+.img-logo {
+ width: 100px;
+ height: 50px;
+ object-fit: contain;
+}
+
+#overviewContent .banner .btn.btn-sm.btn-primary {
+    position: absolute;
+    bottom: 59%;
+    left: 80%;
+}
+
+.dropbtn {
+    cursor: pointer;
+    color: #0d72c2;
+    padding: 8px;
+    border: 1px solid #0d72c2;
+    border-radius: 5px;
+    width: 180px;
+    margin: 10px auto 0px 11.5px;
+}
+
+.droplist {
+    max-width: 80vw;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: -1;
+    margin: 1px 0px 0px 0px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #0d72c2;
+    border-radius: 5px;
+    text-align: left;
+    left: 5px;
+    min-width: 220px;
+}
+ 
+.fa-times-circle {
+    color: #0d72c2;
+}
+  
+.droplist li {
+    padding: 7px;
+    border-bottom: 0.5px solid #eee;
+}
+
+.droplist li:last-child {
+    border-bottom: none;
+}
+
+.droplist li:hover, .droplist a:hover {
+    background-color: #EEF3F8;
+    color: #0d72c2;
+} 
+
+.droplist li.dropheader {
+    padding: 7px;
+    font-weight: bold;
+    border-bottom: 0px;
+    color: #000;
+}
+
+.droplist li:hover.dropheader {
+    background-color: #FFF;
+}
+
+#overviewContent .font-purple {
+    color: #551A8B;
+}
+
+.prod {
+    background-color: white;
+    margin: 0px 10px;
+    border-radius: 4px;
+}
+
+#overviewContent .prod.prod-horizontal {
+    padding-top: 25px;
+}
+
+.prod-horizontal > .row {
+    padding: 0px 20px;
+}
+
+.prod-main, .infobox {
+    padding: 10px 20px;
+}
+
+.prod-img {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.prod-img img {
+    height: 100px;
+    width: auto;
+}
+
+.prod-img.prod-img-xs img {
+    height: 70px;
+}
+
+.center-content {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.prod-price, .overviewpdf {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.prod-price, .shop-btn, .learn-bar {
+    text-align: center;
+}
+
+p.prod-price {
+    margin-bottom: 5px;
+}
+
+div.overviewpdf {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
+    color: #0d72c2;
+}
+
+.learn-bar {
+    background-color: #CCC;
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 0px 0px 4px 4px;
+    color: #484848; 
+    transition: all 0.62s ease-in-out;
+}
+
+.learn-bar:hover {
+    color: #CCC;
+    background-color: #484848;
+}
+
+.pdf {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.pdf a {
+    text-decoration: none;
+}
+
+.pdf-svg {
+    height: 40px;
+    color: #0d72c2;
+    padding-right: 10px;
+}
+
+#overviewContent .btn-primary:hover {
+    background: linear-gradient(to top, #5dce50, #148935);
+}
+
+.tabbed-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.stdtext {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.categoryIndexWrapper {
+    margin-left: 0.5em !important;
+    margin-right: 0.5em !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.tbl-rwd table {
+    width: 100%;
+}
+
+.tbl-rwd th {
+    text-align: center;
+    background-color: #f1f5f9;  
+}
+
+.tbl-rwd th, .tbl-rwd td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+.tbl-rwd td[data-title="PART NUMBER"] {
+    font-weight: bold;
+} 
+.tbl-rwd td[data-title="PRICE"] {
+    font-weight: bold;
+    font-style: italic;
+    color: #009900;
+}
+
+.prod-main.no-learn-more + .prod-sec {
+    padding-bottom: 20px;
+}
+
+.read-more, .read-less {
+    position: absolute;
+    margin: 0px 25px;
+    left: 0;
+    color: #2b91ca;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px 15px 0px;
+    background: #FFF;
+    border: 10px solid #FFF;
+}
+
+.read-more-sc, .read-less-sc {
+    position: absolute;
+    color: #2b91ca;
+    left: 0;
+    position: relative;
+    margin: 0px;
+    background-color: #FFF;
+    font-weight: bold;
+    padding-bottom: 8px;
+    cursor: pointer;
+    width: calc(100% - 70px);
+}
+
+ul .read-more, ul .read-more-sc {
+    left: -40px;
+}
+
+/* can't close highslide without z-index higher than shop now button if they line up */
+.highslide-container {
+    z-index: 10000 !important;
+}
+
+.highslide-container iframe img {
+    margin: auto;
+}
+
+#overviewContent .container.template2 h1, #overviewContent .container.template2 h2, #overviewContent .container.template2 h4 {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+#overviewContent .container h2.section-header, #overviewContent .container .template2 h2.section-header {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#overviewContent .container .product {
+    background: #FFF;
+    padding: 25px 20px;
+    border-radius: 5px;
+}
+
+.main-info {
+    transition: height 0.4s ease-in-out;
+}
+
+#overviewContent .container.template2 .col-md-6 {
+    padding: 0px;
+}
+
+.more-info {
+    background-color: #FFF;
+    margin: 0px 15px;
+    padding: 25px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.read-more-t2, .read-less-t2 {
+    margin: 0px 15px;
+    padding: 0px 15px 8px 15px;
+    background-color: #FFF;
+    color: #2b91ca;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#overviewContent .container .product {
+    margin: 0px 10px;
+}
+#overviewContent .container.template2 .product {
+    margin: 0px;
+}
+
+.bulleted-list-img {
+    max-width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+
+/* hiding inline styles that summernote is attaching in editor */
+#overviewContent p, #overviewContent span, #overviewContent ul, #overviewContent li {
+    background-color: #fff !important;
+    font-size: 1rem !important;
+}
+
+.custom-link-training {
+    width: 25px;
+}
+
+.custom-link-educational {
+    color: #fff;
+    border-radius: 50%;
+    background-color: #519CD6;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.custom-link-educational i {
+    color: #fff;
+}
+
+@media (min-width: 992px){
+    #overviewContent p, #overviewContent span, #overviewContent ul, #overviewContent li {
+        font-size: .875rem !important;
+        line-height: inherit !important;
+    }
+}
+
+@media (min-width: 1012px) {
+    .dropdown {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .dropbtn {
+        margin-right: 30px;
+        width: 160px;
+        margin-left: auto;
+    }
+    .row .dropbtn {
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+    .droplist {
+        right: 20px;
+        left: auto;
+        width: auto;
+        white-space: nowrap;
+        max-width: 45vw;
+        position: absolute;
+    }
+    .row .droplist {
+        right: 0px;
+    }
+}
+
+@media (min-width: 767px) {
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .prod-main {
+        padding-bottom: 170px;
+    }   
+    .prod-main.extra-space {
+        padding-bottom: 190px;
+    }
+    .prod-main.no-starting-at, .prod-main.no-shopnow.no-learn-more {
+         padding-bottom: 105px;
+    }
+    .prod-main.no-learn-more {
+        padding-bottom: 150px;
+    }
+    .prod-main.no-starting-at.no-shopnow, .prod-main.no-starting-at.no-learn-more {
+        padding-bottom: 65px;
+    }
+    .prod-main.no-starting-at.no-shopnow.no-learn-more {
+        padding-bottom: 10px;
+    }
+    .prod-main.x2-shopnow {
+        padding-bottom: 275px;
+    }
+    .prod-sec {
+        min-width: calc(100% - 50px);
+        background-color: #FFFFFF;
+        border-radius: 4px;
+    }
+    .prod-horizontal .prod-sec {
+        position: relative;
+        margin: 0px;
+        min-width: 100%;
+    }
+    #overviewContent .banner .btn.btn-sm.btn-primary {
+        bottom: 70%;
+        left: 86%;
+    }
+    #overviewContent h1, h2.withmenu {
+        width: calc(97% - 190px);
+        display: inline-block;
+        padding-right: 0px;
+        padding-left: 3%;
+        
+    }
+    #overviewContent h1.no-menu, #overviewContent .template2 h1 {
+        width: 100%;
+    }
+    #overviewContent .template2 h1 {
+        padding-left: 0px;
+    }
+    .tbl-rwd td[data-title="INFO"], .tbl-rwd td[data-title="SPECS"]{
+        text-align: center;
+    }
+    #overviewContent .container .product {
+        margin: 0px 20px;
+    }
+    #overviewContent .container.template2 .product {
+        margin: 0px 15px;
+    }
+    .tbl-rwd, .tbl-rwd.center-content {
+        width: 90%;
+        margin: 0px;
+    }
+    .tbl-rwd table {
+        margin: 0px 5%;
+    }
+    .product .tbl-rwd table {
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tbl-rwd tr {
+        min-width: calc(90vw - 35px);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        border: 1px solid #000; 
+        margin-bottom: 15px;
+    }
+    .prod .tbl-rwd tr, .product .tbl-rwd tr {
+        min-width: 290px;
+        width: 290px;
+    }
+    .tbl-rwd table {
+        width: 95%;
+        margin: 0px 2.5%;
+    }
+    .prod .tbl-rwd table, .product .tbl-rwd table {
+        margin: 10px 5px;
+    }
+    .tbl-rwd table,
+    .tbl-rwd tr,
+    .tbl-rwd th,
+    .tbl-rwd td {
+        display: block;
+    } 
+    .tbl-rwd .tbl-head {
+        display: none;
+    }
+    .tbl-rwd td { 
+        border: none;
+        position: relative;
+        padding-left: 50%; 
+        white-space: normal;
+        text-align:left;
+    }   
+    .tbl-rwd td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+    .tbl-rwd td:before {
+        content: attr(data-title);
+        min-width: 50%;
+    }    
+    .tbl-rwd td[data-title="Data Logging Points / hour"] {
+        font-weight: normal;
+        background-color: #f1f5f9;  
+        font-size: 10px;
+    }
+    #overviewContent .container.template2 h1, #overviewContent .container.template2 h2, #overviewContent .container.template2 h4 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 576px) {
+    #overviewContent .mobile-linebreak, .desktop-hidden {
+        display: none !important;
+    }
+}
