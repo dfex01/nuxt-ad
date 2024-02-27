@@ -27,7 +27,7 @@
                         </li>
                     </ul>
                 </div>
-                <div :class="mainContentWrapperClasses" v-if="blok.mainContent">
+                <div :class="mainContentWrapperClasses" v-if="blok.mainContent.length">
                     <div v-if="blok.mainContent[0].media.length"
                         class="col-span-5 text-center">
                         <img v-for="asset of blok.mainContent[0].media"
@@ -67,7 +67,7 @@
     import { renderRichText } from '@storyblok/vue';
 
     const props = defineProps({ blok: Object })
-
+    console.log("props.blok.mainContent: ", props.blok.mainContent)
     function getPanelId(header) { 
         return header.toLowerCase().replaceAll(" ", "-").replaceAll("&", "and");
     }
