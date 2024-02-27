@@ -27,7 +27,7 @@
                         </li>
                     </ul>
                 </div>
-                <div :class="mainContentWrapperClasses">
+                <div :class="mainContentWrapperClasses" v-if="blok.mainContent">
                     <div v-if="blok.mainContent[0].media.length"
                         class="col-span-5 text-center">
                         <img v-for="asset of blok.mainContent[0].media"
@@ -145,6 +145,5 @@
     onMounted(() => {
         console.log("Mounted");
         console.log("props.blok: ", props.blok)
-        docReadyFunction();
     })
 </script>
