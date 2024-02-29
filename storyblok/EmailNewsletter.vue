@@ -14,20 +14,33 @@
         width: 80%;
         height: auto !important;
     }
+    .issue-no {
+        border-top: 2px solid rgb(98, 98, 98);
+        border-bottom: 2px solid rgb(98, 98, 98);
+        font-size: 22px;
+        padding: 12px 0px;
+    }
 </style>
 
 <template>
     <div class="email-wrapper mx-auto">
         <img src="https://cdn.automationdirect.com/static/images/logos/1024x154.png"
-            class="adc-img" />
-        <div class="issue-no">
+            class="adc-img mx-auto" />
+        <div class="issue-no text-center">
             Newsletter Volume {{ blok.volume }} Issue {{ blok.issue }}
         </div>
         <div class="banner">
-            <img :src="blok.banner.filename" />
+            <img :src="blok.banner.filename" class="mx-auto" />
         </div>
 
         <div v-editable="blok" v-html="headlineHtml"></div>
+
+        <div class="grid grid-cols-12 grid-flow-col">
+            <EmailStory v-for="story of blok.stories"
+                :blok="story">
+            </EmailStory>
+        </div>
+
         <div v-editable="blok" v-html="footerHtml"></div>
     </div>    
 </template>
