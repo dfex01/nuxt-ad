@@ -1,5 +1,5 @@
 <script setup>
-const story = await useAsyncStoryblok('barcode', { version: 'draft' })
+const story = await useAsyncStoryblok('overviews/barcode', { version: 'draft' })
 </script>
  
 <template>

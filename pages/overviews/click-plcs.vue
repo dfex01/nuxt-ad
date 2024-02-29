@@ -1,5 +1,5 @@
 <script setup>
-const story = await useAsyncStoryblok('click-plcs', { version: 'draft' })
+const story = await useAsyncStoryblok('overviews/click-plcs', { version: 'draft' })
 </script>
  
 <template>

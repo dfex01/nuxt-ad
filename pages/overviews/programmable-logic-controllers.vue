@@ -1,5 +1,5 @@
 <script setup>
-const story = await useAsyncStoryblok('programmable-logic-controllers', { version: 'draft' })
+const story = await useAsyncStoryblok('overviews/programmable-logic-controllers', { version: 'draft' })
 </script>
  
 <template>
