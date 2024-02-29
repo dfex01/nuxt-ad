@@ -29,16 +29,26 @@
         <div class="issue-no text-center">
             Newsletter Volume {{ blok.volume }} Issue {{ blok.issue }}
         </div>
+
         <div class="banner">
             <img :src="blok.banner.filename" class="mx-auto" />
         </div>
 
         <div v-editable="blok" v-html="headlineHtml"></div>
 
-        <div class="grid grid-cols-12 grid-flow-col">
+        <div class="grid grid-cols-12 grid-flow-col mt-3">
             <EmailStory v-for="story of blok.stories"
                 :blok="story">
             </EmailStory>
+        </div>
+
+        <div class="issue-no text-center mt-5">
+            Now Available
+        </div>
+        <div class="grid grid-cols-12 grid-flow-col mt-3">
+            <SimpleProductPanel v-for="panel of blok.nowAvailable"
+                :blok="panel">
+            </SimpleProductPanel>
         </div>
 
         <div v-editable="blok" v-html="footerHtml"></div>
