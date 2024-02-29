@@ -11,7 +11,7 @@
 
 <template>
   <div v-editable="blok" class="email-story col-span-6 px-2">
-    <img :src="blok.image.filename" />
+    <img v-if="blok.image" :src="blok.image.filename" />
 
     <p class="headline">
         <a :href="blok.linkUrl">

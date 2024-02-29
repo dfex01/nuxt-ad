@@ -7,7 +7,7 @@
 
 <template>
   <div v-editable="blok" class="now-available col-span-4 px-2 text-center">
-    <img :src="blok.image.filename" />
+    <img v-if="blok.image" :src="blok.image.filename" />
 
     <p>
         {{blok.mainText}}

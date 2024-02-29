@@ -31,7 +31,7 @@
         </div>
 
         <div class="banner">
-            <img :src="blok.banner.filename" class="mx-auto" />
+            <img v-if="blok.banner" :src="blok.banner.filename" class="mx-auto" />
         </div>
 
         <div v-editable="blok" v-html="headlineHtml"></div>
