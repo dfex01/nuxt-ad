@@ -31,7 +31,7 @@
                     <div v-if="blok.mainContent[0].media.length"
                         class="col-span-5 text-center">
                         <img v-for="asset of blok.mainContent[0].media"
-                            :src="asset.media[0].filename"
+                            :src="asset.media[0]?.filename"
                             class="img-fluid" />
                     </div>
                     <div :class="mainContentTextColumnClasses"
